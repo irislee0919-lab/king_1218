@@ -1,0 +1,134 @@
+CSS
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#title {
+  color: #333333;
+  font-size: 32px;
+  transition: color 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+
+.container {
+  display: flex;                /* 1. 啟用 Flexbox */
+  justify-content: center;     /* 2. 主軸（水平）置中 */
+  align-items: center;         /* 3. 交錯軸（垂直）置中 */
+}
+
+.screen-container {
+  /* 必須有高度才能看出垂直置中 */
+  height: 100vh; /* 100vh 代表瀏覽器可視區域的 100% 高度 */
+  
+  /* Flexbox 置中三件套 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+.center-box {
+  padding: 32px 48px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} 
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Flexbox 容器：水平置中、自動換行、間隔 20px */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 每一位家人的卡片樣式 */
+.family-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.family-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.avatar {
+  font-size: 54px;
+  margin-bottom: 12px;
+}
+
+.role-tag {
+  display: inline-block;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.info-item {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 大頭照外觀設定 */
+.avatar-img {
+  width: 90px;           /* 設定固定寬度 */
+  height: 90px;          /* 設定固定高度，與寬度相同保持正方形 */
+  object-fit: cover;     /* 最關鍵：超出部分自動裁切，絕不拉伸變形 */
+  border-radius: 50%;    /* 變成圓形大頭照（若想要方形圓角可改為 12px） */
+  display: block;        /* 區塊元素方便居中 */
+  margin: 0 auto 12px;   /* 水平置中，並留出下方間距 */
+}
